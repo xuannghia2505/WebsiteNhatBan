@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Thư viện-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Icon-->
+    <link rel="icon" href="/imgs/icon/icon.png" type="image/x-icon">
+    <!--CSS-->
+    <link href="/css/style-dangnhap.css" rel="stylesheet" type="text/css">
+
+    <title>Đăng Nhập</title>
+</head>
+<!-- <script src="/public/js/jquery-3.6.0.min.js"></script> -->
+
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form method="post" action="/dangnhap">
+
+            <div id="signupalert" style=" <%if (!data || !data.error){%>display:none;<% } %> "class="alert alert-danger">
+                <p>Error:</p>
+
+                <%if (data && data.error) {%>
+                    <span>
+                        <%= data.error %>
+                    </span>
+                    <%}%>
+            </div>
+            <!-- Username -->
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Username" name="username" id="username">
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" name="password" id="password">
+            </div>
+
+            <button class="btn">Sign in</button>
+        </form>
+        <div class="quenmk"><a href="/">Quên mật khẩu?</a></div>
+        <a href="/dangki"><input type="button" class="btndk" value="Tạo tài khoản mới"></a>
+        <a href="/"><input type="button" class="btnbh" value="Trở về trang chủ"></a>
+
+    </div>
+</body>
+<script>
+    // function setCookie(cname, cvalue, exdays) {
+    //     const d = new Date();
+    //     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    //     let expires = "expires=" + d.toUTCString();
+    //     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    // }
+    // function getCookie(cname) {
+    //     let name = cname + "=";
+    //     let decodedCookie = decodeURIComponent(document.cookie);
+    //     let ca = decodedCookie.split(';');
+    //     for (let i = 0; i < ca.length; i++) {
+    //         let c = ca[i];
+    //         while (c.charAt(0) == ' ') {
+    //             c = c.substring(1);
+    //         }
+    //         if (c.indexOf(name) == 0) {
+    //             return c.substring(name.length, c.length);
+    //         }
+    //     }
+    //     return "";
+    // }
+
+    // setCookie('username','xuannghia',1);
+    // function login() {
+    //     $.ajax({
+    //         url: '/dangnhap',
+    //         type: 'POST',
+    //         data: {
+    //             username: $('#username').val(),
+    //             password: $('#password').val()
+    //         }
+    //     }).then(data => {
+    //         setCookie('token', data.token, 1)
+    //         window.location.href = "/"
+    //     })
+    //         .catch(err => {
+    //             console.log(err);
+    //         })
+    // }
+</script>
+
+</html>

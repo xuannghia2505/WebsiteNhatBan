@@ -1,0 +1,142 @@
+[
+    {
+        "_id" : ObjectId("60f79b547943132ff07c4508"),
+        "katakana" : "ア",
+        "romaji" : "a",
+        "img" : "/imgs/nguoimoi/ak.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79b907943132ff07c450a"),
+        "katakana" : "イ",
+        "romaji" : "i",
+        "img" : "/imgs/nguoimoi/ik.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79b9a7943132ff07c450c"),
+        "katakana" : "ウ",
+        "romaji" : "u",
+        "img" : "/imgs/nguoimoi/uk.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79ba77943132ff07c450e"),
+        "katakana" : "エ",
+        "romaji" : "e",
+        "img" : "/imgs/nguoimoi/ek.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79bb37943132ff07c4510"),
+        "katakana" : "オ",
+        "romaji" : "o",
+        "img" : "/imgs/nguoimoi/ok.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a34c7943132ff07c459b"),
+        "katakana" : "カ",
+        "romaji" : "ka",
+        "img" : "/imgs/nguoimoi/kak.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3597943132ff07c459d"),
+        "katakana" : "キ",
+        "romaji" : "ki",
+        "img" : "/imgs/nguoimoi/kik.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3617943132ff07c459f"),
+        "katakana" : "ク",
+        "romaji" : "ku",
+        "img" : "/imgs/nguoimoi/kuk.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3697943132ff07c45a1"),
+        "katakana" : "ケ",
+        "romaji" : "ke",
+        "img" : "/imgs/nguoimoi/kek.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a36f7943132ff07c45a3"),
+        "katakana" : "コ",
+        "romaji" : "ko",
+        "img" : "/imgs/nguoimoi/kok.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3787943132ff07c45a5"),
+        "katakana" : "サ",
+        "romaji" : "sa",
+        "img" : "/imgs/nguoimoi/sak.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3827943132ff07c45a7"),
+        "katakana" : "シ",
+        "romaji" : "shi",
+        "img" : "/imgs/nguoimoi/shik.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a38a7943132ff07c45a9"),
+        "katakana" : "ス",
+        "romaji" : "su",
+        "img" : "/imgs/nguoimoi/suk.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3907943132ff07c45ab"),
+        "katakana" : "セ",
+        "romaji" : "se",
+        "img" : "/imgs/nguoimoi/sek.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3977943132ff07c45ad"),
+        "katakana" : "ソ",
+        "romaji" : "so",
+        "img" : "/imgs/nguoimoi/sok.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3a17943132ff07c45af"),
+        "katakana" : "タ",
+        "romaji" : "ta",
+        "img" : "/imgs/nguoimoi/tak.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3af7943132ff07c45b1"),
+        "katakana" : "チ",
+        "romaji" : "chi",
+        "img" : "/imgs/nguoimoi/chik.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3f57943132ff07c45b3"),
+        "katakana" : "ツ",
+        "romaji" : "tsu",
+        "img" : "/imgs/nguoimoi/tsuk.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a3fc7943132ff07c45b5"),
+        "katakana" : "テ",
+        "romaji" : "te",
+        "img" : "/imgs/nguoimoi/tek.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a4037943132ff07c45b7"),
+        "katakana" : "ト",
+        "romaji" : "to",
+        "img" : "/imgs/nguoimoi/tok.png",
+        "__v" : 0
+    }
+]

@@ -1,0 +1,247 @@
+[
+    {
+        "_id" : ObjectId("60f79ec77943132ff07c452d"),
+        "hiragana" : "あ",
+        "romaji" : "a",
+        "img" : "/imgs/nguoimoi/ah.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79edd7943132ff07c452f"),
+        "hiragana" : "い",
+        "romaji" : "i",
+        "img" : "/imgs/nguoimoi/ih.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79ee47943132ff07c4531"),
+        "hiragana" : "う",
+        "romaji" : "u",
+        "img" : "/imgs/nguoimoi/uh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79eea7943132ff07c4533"),
+        "hiragana" : "え",
+        "romaji" : "e",
+        "img" : "/imgs/nguoimoi/eh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79ef17943132ff07c4535"),
+        "hiragana" : "お",
+        "romaji" : "o",
+        "img" : "/imgs/nguoimoi/oh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f017943132ff07c4537"),
+        "hiragana" : "か",
+        "romaji" : "ka",
+        "img" : "/imgs/nguoimoi/kah.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f097943132ff07c4539"),
+        "hiragana" : "き",
+        "romaji" : "ki",
+        "img" : "/imgs/nguoimoi/kih.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f117943132ff07c453b"),
+        "hiragana" : "く",
+        "romaji" : "ku",
+        "img" : "/imgs/nguoimoi/kuh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f177943132ff07c453d"),
+        "hiragana" : "け",
+        "romaji" : "ke",
+        "img" : "/imgs/nguoimoi/keh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f207943132ff07c453f"),
+        "hiragana" : "こ",
+        "romaji" : "ko",
+        "img" : "/imgs/nguoimoi/koh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f447943132ff07c4541"),
+        "hiragana" : "さ",
+        "romaji" : "sa",
+        "img" : "/imgs/nguoimoi/sah.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f507943132ff07c4543"),
+        "hiragana" : "し",
+        "romaji" : "shi",
+        "img" : "/imgs/nguoimoi/shih.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f597943132ff07c4545"),
+        "hiragana" : "す",
+        "romaji" : "su",
+        "img" : "/imgs/nguoimoi/suh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f5f7943132ff07c4547"),
+        "hiragana" : "せ",
+        "romaji" : "se",
+        "img" : "/imgs/nguoimoi/seh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f697943132ff07c4549"),
+        "hiragana" : "そ",
+        "romaji" : "so",
+        "img" : "/imgs/nguoimoi/soh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f757943132ff07c454b"),
+        "hiragana" : "た",
+        "romaji" : "ta",
+        "img" : "/imgs/nguoimoi/tah.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f7e7943132ff07c454d"),
+        "hiragana" : "ち",
+        "romaji" : "chi",
+        "img" : "/imgs/nguoimoi/chih.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f8a7943132ff07c454f"),
+        "hiragana" : "つ",
+        "romaji" : "tsu",
+        "img" : "/imgs/nguoimoi/tsuh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f927943132ff07c4551"),
+        "hiragana" : "て",
+        "romaji" : "te",
+        "img" : "/imgs/nguoimoi/teh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f79f9a7943132ff07c4553"),
+        "hiragana" : "と",
+        "romaji" : "to",
+        "img" : "/imgs/nguoimoi/toh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a18a7943132ff07c4569"),
+        "hiragana" : "な",
+        "romaji" : "na",
+        "img" : "/imgs/nguoimoi/nah.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1967943132ff07c456b"),
+        "hiragana" : "に",
+        "romaji" : "ni",
+        "img" : "/imgs/nguoimoi/nih.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1a17943132ff07c456d"),
+        "hiragana" : "ぬ",
+        "romaji" : "nu",
+        "img" : "/imgs/nguoimoi/nuh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1a77943132ff07c456f"),
+        "hiragana" : "ね",
+        "romaji" : "ne",
+        "img" : "/imgs/nguoimoi/neh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1ae7943132ff07c4571"),
+        "hiragana" : "の",
+        "romaji" : "no",
+        "img" : "/imgs/nguoimoi/noh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1b87943132ff07c4573"),
+        "hiragana" : "は",
+        "romaji" : "ha",
+        "img" : "/imgs/nguoimoi/hah.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1c07943132ff07c4575"),
+        "hiragana" : "ひ",
+        "romaji" : "hi",
+        "img" : "/imgs/nguoimoi/hih.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1c97943132ff07c4577"),
+        "hiragana" : "ふ",
+        "romaji" : "fu",
+        "img" : "/imgs/nguoimoi/fuh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1d37943132ff07c4579"),
+        "hiragana" : "へ",
+        "romaji" : "he",
+        "img" : "/imgs/nguoimoi/heh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1db7943132ff07c457b"),
+        "hiragana" : "ほ",
+        "romaji" : "ho",
+        "img" : "/imgs/nguoimoi/hoh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1e57943132ff07c457d"),
+        "hiragana" : "ま",
+        "romaji" : "ma",
+        "img" : "/imgs/nguoimoi/mah.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a1eb7943132ff07c457f"),
+        "hiragana" : "み",
+        "romaji" : "mi",
+        "img" : "/imgs/nguoimoi/mih.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a2007943132ff07c4581"),
+        "hiragana" : "む",
+        "romaji" : "mu",
+        "img" : "/imgs/nguoimoi/muh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a2087943132ff07c4583"),
+        "hiragana" : "め",
+        "romaji" : "me",
+        "img" : "/imgs/nguoimoi/meh.png",
+        "__v" : 0
+    },
+    {
+        "_id" : ObjectId("60f7a2107943132ff07c4585"),
+        "hiragana" : "も",
+        "romaji" : "mo",
+        "img" : "/imgs/nguoimoi/moh.png",
+        "__v" : 0
+    }
+]

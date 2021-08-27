@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Thư viện-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600;1,700&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" > -->
+    <!--Icon-->
+    <link rel="icon" href="/imgs/icon/icon.png" type="image/x-icon">
+    <!--CSS-->
+
+    <link href="/css/style-tiengnhat.css" rel="stylesheet" type="text/css">
+    <!-- boostrapt -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="/js/js-tiengnhat.js"></script>
+    <title>Tiếng Nhật</title>
+</head>
+
+<body>
+    <%- include('./_layouts/header')-%>
+        <div class="text-box">
+            <h1>Cùng Học Tiếng Nhật Thôi Nào!!!!</h1>
+            <p>Bắt đầu chưa bao giờ là muộn, hãy ghé thăm chúng tớ mỗi ngày nhé.</p>
+            <a href="#content_mid" class="hero-btn">Học thôi nào</a>
+        </div>
+
+        </section>
+        <!-- content_mid -->
+        <section id="content_mid" class="content_mid">
+            <div class="hoctiengnhat">
+                <div class="htnleft">
+                    <p>Học tiếng Nhật</p>
+                    <div class="capdo">
+                        <h3>Cấp độ</h3>
+                        <li class="active tab-item" onclick="changePost('nguoimoi',this)">Người mới</li>
+                        <li class="tab-item" onclick="changePost('n5',this)">N5</li>
+                        <li class="tab-item" onclick="changePost('n4',this)">N4</li>
+                        <li>N3</li>
+                        <li>N2</li>
+                        <li>N1</li>
+                    </div>
+                </div>
+
+                <div class="htnright">
+                    <div id="nguoimoi">
+
+                        <div class="container">
+                            <div class="chonbang">
+                                <button onclick="showHira()" id="hiragana" class="active">HIRAGANA</button>
+                                <button onclick="showKata()" id="katakana">KATAKANA</button>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-5 " id="hideKata">
+                                <!-- hira -->
+
+                                <%data.hiragana.forEach(hira=>{%>
+                                    <div class="col">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#staticBackdrop<%=hira.hiragana%>"
+                                            style="width: 100%; height:150px; background:white; color:rgb(86, 107, 119); font-size:30px;">
+                                            <div class="center-alphabet">
+                                                <div class="main" ng-if="!showKatakana">
+                                                    <%=hira.hiragana%>
+                                                </div>
+                                                <div class="romanji">
+                                                    <%=hira.romaji%>
+                                                </div>
+
+                                            </div>
+                                        </button>
+                                        <div class="modal fade" id="staticBackdrop<%=hira.hiragana%>"
+                                            data-backdrop="false" data-keyboard="true" tabindex="-1"
+                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content" style="width:800px; height:800px">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticBackdropLabel">Chữ
+                                                            <%=hira.romaji%>
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="<%=hira.img%>" alt="" style="width:80%">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <%})%>
+                                </div>
+                                        <!-- kata  -->
+                                        <div class="row row-cols-1 row-cols-md-5" style="display:none" id="hideHira">
+                                            <%data.katakana.forEach(kata=>{%>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                        data-target="#staticBackdrop<%=kata.katakana%>"
+                                                        style="width: 100%; height:150px; background:white; color:rgb(86, 107, 119); font-size:30px;">
+                                                        <div class="center-alphabet">
+                                                            <div class="main" ng-if="!showHiragana">
+                                                                <%=kata.katakana%>
+                                                            </div>
+                                                            <div class="romanji">
+                                                                <%=kata.romaji%>
+                                                            </div>
+
+                                                        </div>
+                                                    </button>
+                                                    <div class="modal fade" id="staticBackdrop<%=kata.katakana%>"
+                                                        data-backdrop="false" data-keyboard="true" tabindex="-1"
+                                                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content"
+                                                                style="width:800px; height:800px">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="staticBackdropLabel">Chữ
+                                                                        <%=kata.romaji%>
+                                                                    </h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <img src="<%=kata.img%>" alt="" style="width:80%">
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <%})%>
+                                        </div>
+
+
+
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div id="n5">
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <% data.n5.forEach(data=>{ %>
+                                    <div class="col">
+                                        <p>KATAKANA</p>
+                                        <img src="<%=data.img%>" class="img-fluid" alt="">
+                                        <p><a href="#">Learn</a></p>
+                                    </div>
+                                    <% }) %>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n4">
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <% data.n4.forEach(data=>{ %>
+                                    <div class="col">
+                                        <img src="<%=data.img%>" class="img-fluid" alt="">
+                                        <p><a href="#">Learn</a></p>
+                                    </div>
+                                    <% }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('./_layouts/footer')-%>
+</body>
+
+</html>

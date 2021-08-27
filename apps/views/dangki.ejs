@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Thư viện-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--Icon-->
+    <link rel="icon" href="/imgs/icon/icon.png" type="image/x-icon">
+    <!--CSS-->
+    <link href="/css/style-dangki.css" rel="stylesheet" type="text/css">
+    <!--JS-->
+    <script src="/js/js-dangki.js"></script>
+    <title>Đăng ký</title>
+</head>
+
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+
+        <form method="post" action="/dangki" enctype="multipart/form-data">
+
+            <div id="signupalert" style=" <%if (!data || !data.error){%>display:none;<% } %> "
+                class="alert alert-danger">
+                <p>Error:</p>
+
+                <%if (data && data.error) {%>
+                    <span>
+                        <%= data.error %>
+                    </span>
+                    <%}%>
+            </div>
+            <!-- Full Name -->
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Full Name" name="fullname" id="fullname" autofocus>
+            </div>
+            <!-- Username -->
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Username" name="username" id="username">
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" name="password" id="password">
+            </div>
+            <!-- Confirm Pass -->
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Confirm Password" name="cfpassword" id="cfpassword">
+            </div>
+            <!-- Thông tin riêng -->
+            <div class="radio-button" id="gender">
+                <h3>Giới tính</h3>
+                <label class="container">Nam
+                    <input type="radio" name="gender" value="Nam" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Nữ
+                    <input type="radio" name="gender" value="Nữ">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- Upload hình ảnh -->
+            <div class="upload-img">
+                <input type="file" name="image" id="image">
+                <img src="" id="myImg" alt="">
+            </div>
+
+            <button class="btn">Sign up</button>
+
+
+        </form>
+        <a href="/dangnhap"><input type="button" class="btnbh" value="Đã có tài khoản"></a>
+        <a href="/"><input type="button" class="btnbh" value="Trở về trang chủ"></a>
+
+    </div>
+</body>
+<!-- <script>
+    function signup() {
+        $.ajax({
+            url: '/dangki',
+            type: 'POST',
+            data: {
+                fullname: $('#fullname').val(),
+                username: $('#username').val(),
+                password: $('#password').val()
+            }
+        }).then(data => {
+            window.location.href = "/dangnhap"
+        })
+            .catch(err => {
+                console.log(err);
+            })
+    }
+</script> -->
+
+</html>

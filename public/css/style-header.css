@@ -1,0 +1,10 @@
+#trangchu, #tintuc, #vanhoa, #tiengnhat, #thembaiviet{
+    -webkit-animation: slide-down .3s ease-out;
+    -moz-animation: slide-down .3s ease-out;
+    -webkit-animation: slide-down 10s ease-in;
+    -moz-animation: slide-down 10s ease-in;
+}
+@-webkit-keyframes slide-down{
+    0%  {opacity: 0;}
+    10% {opacity: 1;}
+}

@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/imgs/dangnhap/dangnhap.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+
+}
+#infor{
+    display:none;
+  }
+.login-box h1{
+    float:left ;
+    font-size: 40px;
+    border-bottom: 6px solid #4caf50;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #4caf50;
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 8px 0;
+
+}
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+.textbox input{
+    border:none;
+    outline: none;
+    background:none;
+    color: white;
+    width: 80%;
+    font-size: 18px;
+    margin: 0 10px;
+}
+.btn{
+   
+    width: 100%;
+    border:2px solid #4caf50;
+    background:none;
+    color: white;
+    padding: 5px;
+    margin: 12px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover {
+    color: #4caf50;
+}
+.login-box .quenmk{
+    margin: 10px 0;
+    text-align: center;
+}
+.login-box .quenmk a{
+    width: 100%;
+    text-decoration: none;
+    color: #777;
+    border-bottom: 1px solid #777;
+}
+.login-box .quenmk a:hover{
+    color: chartreuse;
+}
+.login-box .btndk{
+    width: 80%;
+    border: 2px solid #4caf50;
+    color: white;
+    background: none;
+    padding: 5px;
+    margin: 12px 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.login-box .btnbh{
+    width: 80%;
+    border: 2px solid #4caf50;
+    color: white;
+    background: none;
+    padding: 5px;
+    margin: 12px 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.login-box input:hover{
+  color: #4caf50;
+}
+/* alert */
+.alert{padding:8px 0px;margin-bottom:20px;border:1px solid transparent;border-radius:4px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .alert>p,.alert>ul{margin-bottom:5px; margin-left:8px; margin-top:2px}
+  .alert>p+p{margin-top:5px}
+  .alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+  .alert-danger span{margin-bottom:0; margin-left:8px;}

@@ -1,0 +1,25 @@
+<section class="header">
+    <nav class="navbar-main">
+        <a href="/"><img src="/imgs/icon/icon.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li id="trangchu" class= "<%if (data.active==1){%>active<% } %>" ><a href="/">TRANG CHỦ</a></li>
+                <li id="vanhoa" class= "<%if (data.active==2){%>active<% } %>" ><a href="/vanhoa">VĂN HÓA</a></li>
+                <li id="tiengnhat" class= "<%if (data.active==3){%>active<% } %>" ><a href="/tiengnhat">TIẾNG NHẬT</a></li>
+                <li id="tintuc" class= "<%if (data.active==4){%>active<% } %>" ><a href="/tintuc">TIN TỨC</a></li>
+                <li id="thembaiviet" class= "<%if (data==5){%>active<% } %>" ><a href="/thembaiviet">THÊM BÀI VIẾT</a></li>
+            </ul>
+            <div class="dndk" style="<%if (data.username){%>display: none;<% } %>">
+                <a href="/dangnhap">Đăng nhập</a>
+                <a href="/dangki">Đăng kí</a>
+            </div>
+            <div class="dndk" id="infor" style="<%if (data.username){%>display: block;<% } %>">
+                <a href="#">Xin chào bạn <%= data.username%> </a>
+                <a href="/logout"> Đăng xuất</a>
+            </div>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
